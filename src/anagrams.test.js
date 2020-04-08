@@ -34,7 +34,6 @@ describe('isAnagram - basic functionality', () => {
 
         expect(actual).to.equal(expected)
     })
-
 })
 
 
