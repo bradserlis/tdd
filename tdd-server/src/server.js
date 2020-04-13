@@ -6,7 +6,6 @@ const app = express();
 
 app.get('/users/:username', async (req, res) => {
     const { username } = req.params;
-
     try {
         const user = await db.getUserByUsername(username);
         if (user) {
@@ -16,7 +15,6 @@ app.get('/users/:username', async (req, res) => {
             res.status(404).send();
         }
     }
-
     catch (e) {
         res.status(500).json(e);
     }
