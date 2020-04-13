@@ -20,7 +20,6 @@ app.get('/users/:username', async (req, res) => {
     catch (e) {
         res.status(500).json(e);
     }
-
 })
 
 export { app };
